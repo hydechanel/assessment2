@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+
+<title> Music Icon's </title> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+<style>
+
+ /*animista code*/
+            @-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+
+            @-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+
+            @-webkit-keyframes slide-right{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(100px);transform:translateX(100px)}}@keyframes slide-right{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(100px);transform:translateX(100px)}}
+
+            /*styles*/
+            
+           body {
+  height: 800px;
+  background: linear-gradient(to bottom, #3366cc 7%, #99ffcc 100%)
+}
+            
+
+            
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+            .scale:hover{
+           
+                -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                -moz-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    
+            
+            }
+            .rotate:hover{
+                -webkit-animation: rotate-center 0.6s ease-in-out both;
+                -moz-animation: rotate-center 0.6s ease-in-out both;
+                animation: rotate-center 0.6s ease-in-out both;
+            }
+            .slide:active{
+                -webkit-animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) both
+            }
+
+
+
+</style>
+
+
+</head> 
+
+
+<body> 
+
+
+   <div class="row">
+        <div class="image-container scale">
+       
+        <img id="img1" src="img/kick.png" height="200" width="200"
+        onmouseup= "this.src='img/kick.png';"
+                    onmousedown= "this.src='img/kick2.png';"
+        
+        />
+        
+        </div>
+          
+            <div class="image-container rotate">
+           
+            <img id="img2" src="img/bassline1.png" height="200" width="200"/>
+            
+            
+            </div>
+           
+          
+
+            <div class="image-container">
+                <img id="img3" src="img/hihat.png" height="200" width="200"
+                 
+                 onmouseup= "this.src='img/hihat.png';"
+                    onmousedown= "this.src='img/hihat2.png';"/>
+                
+                
+                </div>
+                    
+        
+        </div>
+
+        <div class="row">
+            <div class="image-container scale">
+            
+            <img id="img4" img src="img/clap1.png" height="200" width="200"
+            
+             onmouseup= "this.src='img/clap1.png';"
+                    onmousedown= "this.src='img/clap2.png';"/>
+            
+            
+            </div>
+            
+            <div class="image-container rotate">
+            
+            <img id="img5" img src="img/snare.png" height="200" width="200"/>
+            
+            </div>
+           
+           
+            <div class="image-container scale">
+            
+           <img id="img6" img src="img/sinewave.png" height="200" width="200"/>
+            
+        
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="image-container rotate">
+            
+            <img id="img7" img src="img/synth.png" height="200" width="200"/>
+            
+            </div>
+            
+            <div class="image-container ">
+            
+            <img id="img8" img src="img/sqr.png" height="200" width="200"/></div>
+            <div class="image-container">
+            
+           
+             <div class="image-container scale ">
+            <img id="img9" img src="img/speaker.png" height="200" width="200"/></div>
+        </div>
+    </body>
+
+
+<script>
+var sound1 = new buzz.sound("sound/kick.wav");
+var sound2 = new buzz.sound("sound/Bassline1.wav");
+var sound3 = new buzz.sound("sound/hat.wav");
+var sound4 = new buzz.sound("sound/clap.wav"); 
+var sound5 = new buzz.sound("sound/PIV_DJK_SNARE_14.wav");
+var sound6 = new buzz.sound("sound/synth.mp3");
+var sound7 = new buzz.sound("sound/Stabpiano.wav");
+
+window.onload = function() {
+document.getElementById('img1').addEventListener('click', function () {sound1.play(); });
+document.getElementById('img2').addEventListener('click', function () {sound2.play(); });
+document.getElementById('img3').addEventListener('click', function () {sound3.play(); });
+document.getElementById('img4').addEventListener('click', function () {sound4.play(); });
+document.getElementById('img5').addEventListener('click', function () {sound5.play(); });
+document.getElementById('img6').addEventListener('click', function () {sound6.play(); });
+document.getElementById('img7').addEventListener('click', function () {sound7.play(); });
+document.getElementById('img8').addEventListener('click', function () {sound8.play(); });
+document.getElementById('img9').addEventListener('click', function () {sound9.play(); });
+document.getElementById('img10').addEventListener('click', function () {sound10.play(); });
+}
+
+</script>
+
+
+</body> 
+
+</html> 
+
+
+
+
